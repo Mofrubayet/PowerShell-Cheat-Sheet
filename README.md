@@ -1,3 +1,5 @@
+# PowerShell Journal - Mofizul Haque Chowdhury - 100952733
+
 This repository serves as a comprehensive resource for learning PowerShell, featuring detailed cmdlet documentation and practical classwork assignments to develop scripting and system management skills.
 
 The repository provides:
