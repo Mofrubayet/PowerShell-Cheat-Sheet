@@ -25,7 +25,7 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Description: Retrieves the status of services on a local or remote computer.
 ##### Syntax: Get-Service
 ##### Example: Get-Service | Where-Object { $_.Status -eq "Running" }
-##### Screenshot:
+##### Screenshot: !(https://github.com/user-attachments/assets/b2e04984-c32c-48e2-a653-15f0e0967a46)
 ### 3. $host.version
 ##### Description:
 ##### Syntax:
