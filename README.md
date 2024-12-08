@@ -1,4 +1,3 @@
-PowerShell Learning Repository
 Overview
 This repository serves as a comprehensive resource for learning PowerShell, featuring detailed cmdlet documentation and practical classwork assignments to develop scripting and system management skills.
 
