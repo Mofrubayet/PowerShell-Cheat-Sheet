@@ -20,17 +20,22 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Description: Displays the specified message or output in the PowerShell console.
 ##### Syntax: Write-Host "Your message here"
 ##### Example: Write-Host "Hello, World!"
-##### Screenshot: !([write-host.png](https://github.com/user-attachments/assets/70ace9ea-5bfe-496f-ac22-3ea428103f21))
+##### Screenshot: 
+![image](https://github.com/user-attachments/assets/d33531e1-53cb-452f-8e92-0c72efbe4e2d)
+
 ### 2. Get-Service
 ##### Description: Retrieves the status of services on a local or remote computer.
 ##### Syntax: Get-Service
 ##### Example: Get-Service | Where-Object { $_.Status -eq "Running" }
-##### Screenshot: !(https://github.com/user-attachments/assets/b2e04984-c32c-48e2-a653-15f0e0967a46)
+##### Screenshot:
+![image](https://github.com/user-attachments/assets/aa1dc169-3352-4a2a-9669-2bba07272da0)
+
 ### 3. $host.version
 ##### Description: Displays the version of the current PowerShell host.
 ##### Syntax: $host.version
 ##### Example: $host.version
-##### Screenshot: ![image](https://github.com/user-attachments/assets/5fbc64b3-ba46-42c2-b568-d70dcc82257d)
+##### Screenshot: 
+![image](https://github.com/user-attachments/assets/5fbc64b3-ba46-42c2-b568-d70dcc82257d)
 ### 4. Get-History
 ##### Description:
 ##### Syntax:
