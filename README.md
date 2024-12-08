@@ -10,3 +10,4 @@ Usage:
 Navigate through the repository to access explanations, code samples, and step-by-step guides to enhance your PowerShell proficiency.
 
 
+# 40 PowerShell Commands
