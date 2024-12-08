@@ -15,6 +15,10 @@ Navigate through the repository to access explanations, code samples, and step-b
 ## Cmdlet names:
 
 ### 1. Write-Host
+#### Description:
+#### Syntax:
+#### Example:
+#### Screenshot:
 ### 2. Get-Service
 ### 3. $host.version
 ### 4. Get-History
