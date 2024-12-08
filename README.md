@@ -36,85 +36,116 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Example: $host.version
 ##### Screenshot: 
 ![image](https://github.com/user-attachments/assets/5fbc64b3-ba46-42c2-b568-d70dcc82257d)
+
 ### 4. Get-History
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Shows a list of all commands previously entered in the session.
+##### Syntax: Get-History
+##### Example: Get-History | Select-Object -First 5
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/a35b2809-525f-4b1a-bbd2-23b2f8ed4c40)
+
 ### 5. Invoke-History
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Runs a command from the command history based on its ID.
+##### Syntax: Invoke-History -Id <HistoryID>
+##### Example: Invoke-History -Id 3
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/faf2cc4b-d02b-424a-ac4c-2debe7e40cbc)
+
 ### 6. Get-Help
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Provides information about cmdlets and functions.
+##### Syntax: Get-Help <CmdletName>
+##### Example: Get-Help Get-Service
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/6668a008-2f24-4143-b8a2-1424eb186ac9)
+
 ### 7. Set-ExecutionPolicy
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Configures the user preference for the PowerShell script execution policy.
+##### Syntax: Set-ExecutionPolicy <PolicyName>
+##### Example: Set-ExecutionPolicy RemoteSigned
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/623a6c53-0312-41ea-a743-dfc5363e5998)
+
 ### 8. Export-Csv
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Exports the results of a command to a CSV file.
+##### Syntax: <Command> | Export-Csv -Path <FilePath> -NoTypeInformation
+##### Example: Get-Service | Export-Csv -Path "C:\Services.csv" -NoTypeInformation
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/698e27b6-a487-4992-86b8-eebdbf4c0f97)
+
 ### 9. Select-Object
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Selects specific properties of an object or rearranges them.
+##### Syntax: Select-Object <Property1>, <Property2>
+##### Example: Get-Service | Select-Object Name, Status
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/1ff5207a-dab0-4118-b20e-1bbf9ad365d5)
+
 ### 10. Get-Process
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves the processes that are currently running on a local or remote computer.
+##### Syntax: Get-Process
+##### Example: Get-Process | Where-Object { $_.CPU -gt 1 }
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/abdf343a-c89a-4e0b-ad54-747a10a20cab)
+
 ### 11. Stop-Process
-##### Description:
-##### Syntax:
-##### Example:
-##### Screenshot:
+##### Description: Stops one or more running processes on a local or remote computer.
+##### Syntax: Stop-Process -Name <ProcessName> -Force
+##### Example: Stop-Process -Name "notepad" -Force
+##### Screenshot: 
+![image](https://github.com/user-attachments/assets/a5637310-79ed-4a38-a6fd-a96135ee1bc5)
+
 ### 12. Get-WmiObject
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves management information from local and remote computers.
+##### Syntax: Get-WmiObject -Class <ClassName>
+##### Example: Get-WmiObject -Class Win32_ComputerSystem
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/929f88a9-e240-454d-aed9-dbfc2243741c)
+
 ### 13. Get-EventLog
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves events from the event logs on the local or remote computer.
+##### Syntax: Description: Retrieves events from the event logs on the local or remote computer.
+##### Example: Get-EventLog -LogName Application -Newest 10
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/c68e4b58-6f90-4a96-96e3-7a603149ad04)
+
 ### 14. Get-Content
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Description: Gets the content of a file.
+##### Syntax: Get-Content -Path <FilePath>
+##### Example: Get-Content -Path "C:\example.txt"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/5d5592bb-c3b5-4972-ac6f-8c1d4e587a26)
+
 ### 15. Get-NetAdapter
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves the network adapter properties and configuration.
+##### Syntax: Get-NetAdapter
+##### Example: Get-NetAdapter | Select-Object Name, Status
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/4c5bc3c1-f18e-4175-b679-f8fa31df5926)
+
 ### 16. Get-Process | Export-Csv
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Exports process details to a CSV file.
+##### Syntax: Get-Process | Export-Csv -Path <FilePath> -NoTypeInformation
+##### Example: Get-Process | Export-Csv -Path "C:\Processes.csv" -NoTypeInformation
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/4b08d641-4ba0-43e8-8450-2a1d41ea2487)
+
 ### 17. Get-Service | ConvertTo-CSV
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Exports service details to a CSV file.
+##### Syntax: Get-Service | Export-Csv -Path <FilePath> -NoTypeInformation
+##### Example: Get-Service | Export-Csv -Path "C:\Services.csv" -NoTypeInformation
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/d7d872a3-eaaa-4879-8d8b-666603781793)
+
 ### 18. Start-Process
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Starts a process on the local computer.
+##### Syntax: Start-Process -FilePath <Path> -ArgumentList <Arguments>
+##### Example: Start-Process -FilePath "notepad"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/b2da3a3d-6b82-477f-83b6-a9f804b8df06)
+
 ### 19. Get-ChildItem
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves the items (files and directories) in a specified location. It can be used to navigate the file system, registry, or other hierarchical structures.
+##### Syntax: Get-ChildItem [-Path] <String> [-Recurse] [-Filter <String>]
+##### Example: Get-ChildItem -Path "C:\Users"
 ##### Screenshot:
 ### 20. Stop-Process
 ##### Description:
