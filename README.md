@@ -230,16 +230,16 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Summary: Studied PowerShell remoting and session management using `Invoke-Command`, `New-PSSession`, and `Enter-PSSession` to run commands remotely. Used `Get-Module -PSSession` to check available modules in sessions and learned how to list network adapters with `Get-RemoteNetAdapter`. This reinforced understanding of remote management, crucial for handling systems across networks.
 
 #### Classwork 6: CIM/WMI Cmdlets and Troubleshooting
-##### Summary: Used CIM/WMI cmdlets like Get-CimInstance and Get-WmiObject to query system information such as network adapter settings and hotfix details. Explored Win32_NetworkAdapterConfiguration and Win32_BIOS classes to gather specific configuration data. This enhanced the understanding of how to use CIM/WMI cmdlets for system analysis and troubleshooting.
+##### Summary: Used CIM/WMI cmdlets like `Get-CimInstance` and `Get-WmiObject` to query system information such as network adapter settings and hotfix details. Explored `Win32_NetworkAdapterConfiguration` and `Win32_BIOS` classes to gather specific configuration data. This enhanced the understanding of how to use CIM/WMI cmdlets for system analysis and troubleshooting.
 
 #### Classwork 7: Profile Script Creation and Variables
-##### Summary: Created a custom profile script with New-Item and edited it using $PROFILE. Learned variable handling, including variable naming, types, and the use of $() for subexpression. This practice emphasized how to set up scripts that run on PowerShell startup and how to declare and use variables efficiently.
+##### Summary: Created a custom profile script with `New-Item` and edited it using `$PROFILE`. Learned variable handling, including variable naming, types, and the use of `$()` for subexpression. This practice emphasized how to set up scripts that run on PowerShell startup and how to declare and use variables efficiently.
 
 #### Classwork 8: Bowling Score Script
-##### Summary: Developed a PowerShell script to collect bowling scores, validate user input, and display results. Used a loop to gather 9 scores, stored them in an array, and printed them with labels for each frame. The script also saved scores to a text file using Out-File. This task reinforced array handling, user input validation, and file writing.
+##### Summary: Developed a PowerShell script to collect bowling scores, validate user input, and display results. Used a loop to gather 9 scores, stored them in an array, and printed them with labels for each frame. The script also saved scores to a text file using `Out-File`. This task reinforced array handling, user input validation, and file writing.
 
 #### Classwork 9: Running and Scheduling PowerShell Scripts
-##### Summary: Created a script to list running services using Get-Service and learned how to schedule it as a task with New-ScheduledTask and Register-ScheduledTask. This task emphasized the automation of PowerShell scripts to run at login and how to use Task Scheduler for task management and execution.
+##### Summary: Created a script to list running services using `Get-Service` and learned how to schedule it as a task with `New-ScheduledTask` and `Register-ScheduledTask`. This task emphasized the automation of PowerShell scripts to run at login and how to use Task Scheduler for task management and execution.
 
 #### Classwork 10: Creating Shared Folders and Printers
-##### Summary: Learned how to create shared folders between two servers using New-SmbShare and set permissions with Set-SmbShare. Practiced adding a printer using Add-Printer, configuring it for network sharing. This demonstrated the setup of shared resources and network printer integration, essential for collaboration and resource management across systems.
+##### Summary: Learned how to create shared folders between two servers using `New-SmbShare` and set permissions with `Set-SmbShare`. Practiced adding a printer using `Add-Printer`, configuring it for network sharing. This demonstrated the setup of shared resources and network printer integration, essential for collaboration and resource management across systems.
