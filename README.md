@@ -27,10 +27,10 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Example: Get-Service | Where-Object { $_.Status -eq "Running" }
 ##### Screenshot: !(https://github.com/user-attachments/assets/b2e04984-c32c-48e2-a653-15f0e0967a46)
 ### 3. $host.version
-##### Description:
-##### Syntax:
-##### Example:
-##### Screenshot:
+##### Description: Displays the version of the current PowerShell host.
+##### Syntax: $host.version
+##### Example: $host.version
+##### Screenshot: ![image](https://github.com/user-attachments/assets/5fbc64b3-ba46-42c2-b568-d70dcc82257d)
 ### 4. Get-History
 ##### Description:
 ##### Syntax:
