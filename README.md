@@ -22,9 +22,9 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Example: Write-Host "Hello, World!"
 ##### Screenshot: !([write-host.png](https://github.com/user-attachments/assets/70ace9ea-5bfe-496f-ac22-3ea428103f21))
 ### 2. Get-Service
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves the status of services on a local or remote computer.
+##### Syntax: Get-Service
+##### Example: Get-Service | Where-Object { $_.Status -eq "Running" }
 ##### Screenshot:
 ### 3. $host.version
 ##### Description:
