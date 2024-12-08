@@ -20,7 +20,7 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Description: Displays the specified message or output in the PowerShell console.
 ##### Syntax: Write-Host "Your message here"
 ##### Example: Write-Host "Hello, World!"
-##### Screenshot: !(write-host.png)
+##### Screenshot: !([write-host.png](https://github.com/user-attachments/assets/70ace9ea-5bfe-496f-ac22-3ea428103f21))
 ### 2. Get-Service
 ##### Description:
 ##### Syntax:
