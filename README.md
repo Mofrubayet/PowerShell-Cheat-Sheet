@@ -147,108 +147,154 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Syntax: Get-ChildItem [-Path] <String> [-Recurse] [-Filter <String>]
 ##### Example: Get-ChildItem -Path "C:\Users"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/8abfd6dc-5238-4ecb-b7a6-9717c6e09e46)
+
 ### 20. Stop-Process
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Stops a running process by name or ID.
+##### Syntax: Stop-Process -Name <Name>
+##### Example: Stop-Process -Name "notepad"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/84a59425-7c11-4979-82a9-5b3347d1d63d)
+
 ### 21. Get-ADComputer
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves information about computer accounts in Active Directory.
+##### Syntax: Get-ADComputer -Filter *
+##### Example: Get-ADComputer -Filter * | Select-Object Name
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/233d6d59-c105-4523-acdc-22bbc7d6fa30)
+
 ### 22. Get-EventLog –LogName Security –Newest 100
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves the 100 most recent security events from the event log.
+##### Syntax: Get-EventLog -LogName Security -Newest 100
+##### Example: Get-EventLog -LogName Security -Newest 100
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/747d30d1-b54a-4809-b0c4-14ee89fb0481)
+
 ### 23. Get-Credential
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Prompts for and returns a credential object.
+##### Syntax: Get-Credential
+##### Example: $credential = Get-Credential
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/6152922f-4e0a-4819-a4e1-6bb43d2260b4)
+
 ### 24. New-PSSession
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Creates a persistent PowerShell session on a local or remote computer.
+##### Syntax: New-PSSession -ComputerName <ComputerName>
+##### Example: $session = New-PSSession -ComputerName Server1
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/9b546cc9-5d03-4ffe-88a3-10eb381a81f4)
+
 ### 25. Get-Module
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Lists the modules that are imported in the current session.
+##### Syntax: Get-Module
+##### Example: Get-Module | Select-Object Name, Version
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/c04c38a5-4452-4d16-b929-7530e23149b0)
+
 ### 26. Get-Module -ListAvailable
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Lists all modules available for import.
+##### Syntax: Get-Module -ListAvailable
+##### Example: Get-Module -ListAvailable | Select-Object Name, Version
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/8c343584-548c-461f-93ea-6415223cfe6f)
+
 ### 27. Import-Module
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Imports a module into the current PowerShell session.
+##### Syntax: Import-Module <ModuleName>
+##### Example: Import-Module ActiveDirectory
 ##### Screenshot:
-### 28. Import-Module -PSSession##### Description:
-##### Syntax:
-##### Example:
+![image](https://github.com/user-attachments/assets/bb61704f-3005-4814-8be9-e427e90f6d7a)
+
+### 28. Import-Module -PSSession
+##### Description: Imports a module into an existing remote session.
+##### Syntax: Import-Module -PSSession <SessionObject> -Name <ModuleName>
+##### Example: Import-Module -PSSession $session -Name NetAdapter
 ##### Screenshot:
-### 29. Get-RemoteNetAdapter##### Description:
-##### Syntax:
-##### Example:
+![image](https://github.com/user-attachments/assets/e116325c-69f2-448d-ae1a-20094731684c)
+
+### 29. Test-Connection
+##### Description: Tests the network connectivity to a specified computer.
+##### Syntax: Test-Connection -computername> "<name>" 
+##### Example: Test-Connection -ComputerName "Server1" -Count 4
 ##### Screenshot:
-### 30. Get-RemoteNetAdapter | Format-List*##### Description:
-##### Syntax:
-##### Example:
+![image](https://github.com/user-attachments/assets/deae2447-7701-46df-852a-749c52e7d718)
+
+### 30. Test-NetConnection
+##### Description: Diagnoses network connectivity and provides detailed information about a connection.
+##### Syntax: Test-NetConnection -ComputerName "website" -Port <port>
+##### Example: Test-NetConnection -ComputerName "www.google.com" -Port 80
 ##### Screenshot:
-### 31. Get-PSSession
-##### Description:
-##### Syntax:
-##### Example:
+![image](https://github.com/user-attachments/assets/18d37bd2-baa3-4a78-a87c-cbd08104bbf4)
+
+### 31. Get-PSSessionConfiguration
+##### Description: Retrieves information about registered PowerShell session configurations on the local computer.
+##### Syntax: Get-PSSessionConfiguration
+##### Example: Get-PSSessionConfiguration
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/ef4c1641-8887-42f3-b063-243f45dc15dc)
+
 ### 32. Remote-PSSession
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Starts a remote PowerShell session.
+##### Syntax: Enter-PSSession -Session <SessionObject>
+##### Example: Enter-PSSession -Session $session
 ##### Screenshot:
-### 33. Get-CimClass
-##### Description:
-##### Syntax:
-##### Example:
+![image](https://github.com/user-attachments/assets/7ccbaaaf-9604-4a42-aad4-b1b37baae8c7)
+
+### 33. Get-EventSubscriber
+##### Description: Retrieves the event subscribers that are registered on the computer. 
+##### Syntax: Get-EventSubscriber
+##### Example: Get-EventSubscriber | Format-List
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/1c4f61e9-abe2-4000-a7de-64fa260d01d8)
+
 ### 34. Get-CimInstance
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves CIM instances from a computer.
+##### Syntax: Get-CimInstance -ClassName <ClassName>
+##### Example: Get-CimInstance -ClassName Win32_OperatingSystem
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/c59e140d-ef8b-44a6-aa74-041d3ef4f0cf)
+
 ### 35. Get-Command
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves all cmdlets, functions, workflows, aliases installed on the system. 
+##### Syntax: Get-Command
+##### Example: Get-Command -Module ActiveDirectory
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/05e7593a-ba7d-4166-9fe0-68e5f3605e98)
+
 ### 36. Set-Content
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Writes or replaces the content in a file.
+##### Syntax: Set-Content -Path <FilePath> -Value <Content>
+##### Example: Set-Content -Path "C:\example.txt" -Value "New content"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/a7d606be-f655-4727-a117-24103e53be4e)
+
 ### 37. New-ScheduledTaskAction
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Creates a new action for a scheduled task.
+##### Syntax: New-ScheduledTaskAction -Execute <Path> -Argument <Arguments>
+##### Example: New-ScheduledTaskAction -Execute "notepad.exe"
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/dc09bf58-8c7b-4e23-bd8b-f55bd37e16e7)
+
 ### 38. New-ScheduledTaskTrigger
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Creates a new trigger for a scheduled task.
+##### Syntax: New-ScheduledTaskTrigger -At <DateTime> -Daily
+##### Example: New-ScheduledTaskTrigger -At "8:00AM" -Daily
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/a13e3d01-81a0-4dc0-8c71-09176dcc7bbe)
+
 ### 39. Register-ScheduledTask
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Registers a new scheduled task.
+##### Syntax: Register-ScheduledTask -TaskName <Name> -Trigger <Trigger> -Action <Action>
+##### Example: Register-ScheduledTask -TaskName "Open Notepad" -Trigger $trigger -Action $action -RunLevel Highest
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/b59ac36a-c060-42c6-8fe4-8fd6a00baf79)
+
 ### 40. Get-ScheduledTask
-##### Description:
-##### Syntax:
-##### Example:
+##### Description: Retrieves information about scheduled tasks.
+##### Syntax: Get-ScheduledTask
+##### Example: Get-ScheduledTask | Select-Object TaskName, State
 ##### Screenshot:
+![image](https://github.com/user-attachments/assets/4b1e304c-52cf-4f5c-8c4a-bfae2c3fbabe)
 
 
 ## Summaries of Classworks:
