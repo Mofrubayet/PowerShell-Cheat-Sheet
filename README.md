@@ -9,7 +9,7 @@ Classwork exercises covering various administrative tasks, data handling, remote
 
 Usage: 
 
-Navigate through the repository to access explanations, code samples, and step-by-step guides to enhance your PowerShell proficiency.
+This repository is created to enhance PowerShell proficiency and to access explanations, code samples, and step-by-step guides.
 
 ## Table of Cmdlets:
 
