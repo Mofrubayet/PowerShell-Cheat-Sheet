@@ -11,6 +11,52 @@ Usage:
 
 Navigate through the repository to access explanations, code samples, and step-by-step guides to enhance your PowerShell proficiency.
 
+##Table of Cmdlets:
+
+| #  | PowerShell Command             |
+|----|--------------------------------|
+| 1  | Write-Host                     |
+| 2  | Get-Service                    |
+| 3  | $host.version                  |
+| 4  | Get-History                    |
+| 5  | Invoke-History                 |
+| 6  | Get-Help                       |
+| 7  | Set-ExecutionPolicy            |
+| 8  | Export-Csv                     |
+| 9  | Select-Object                  |
+| 10 | Get-Process                    |
+| 11 | Stop-Process                   |
+| 12 | Get-WmiObject                  |
+| 13 | Get-EventLog                   |
+| 14 | Get-Content                    |
+| 15 | Get-NetAdapter                 |
+| 16 | Get-Process | Export-Csv       |
+| 17 | Get-Service | ConvertTo-CSV    |
+| 18 | Start-Process                  |
+| 19 | Get-ChildItem                  |
+| 20 | Start-Service                  |
+| 21 | Get-ADComputer                 |
+| 22 | Get-EventLog –LogName Security –Newest 100 |
+| 23 | Get-Credential                 |
+| 24 | New-PSSession                  |
+| 25 | Get-Module                     |
+| 26 | Get-Module -ListAvailable      |
+| 27 | Import-Module                  |
+| 28 | Import-Module -PSSession       |
+| 29 | Test-Connection                |
+| 30 | Test-NetConnection             |
+| 31 | Get-PSSessionConfiguration     |
+| 32 | Remote-PSSession               |
+| 33 | Get-EventSubscriber            |
+| 34 | Get-CimInstance                |
+| 35 | Get-Command                    |
+| 36 | Set-Content                    |
+| 37 | New-ScheduledTaskAction        |
+| 38 | New-ScheduledTaskTrigger       |
+| 39 | Register-ScheduledTask         |
+| 40 | Get-ScheduledTask              |
+
+
 
 # 40 PowerShell Commands
 
@@ -149,12 +195,12 @@ Navigate through the repository to access explanations, code samples, and step-b
 ##### Screenshot:
 ![image](https://github.com/user-attachments/assets/8abfd6dc-5238-4ecb-b7a6-9717c6e09e46)
 
-### 20. Stop-Process
-##### Description: Stops a running process by name or ID.
-##### Syntax: Stop-Process -Name <Name>
-##### Example: Stop-Process -Name "notepad"
+### 20. Start-Service
+##### Description: This cmdlet starts a service on a local or a remote computer. 
+##### Syntax: Start-Service -Name "name"
+##### Example: Start-Service -Name "wuauserv"
 ##### Screenshot:
-![image](https://github.com/user-attachments/assets/84a59425-7c11-4979-82a9-5b3347d1d63d)
+![image](https://github.com/user-attachments/assets/6665959a-024a-42e4-88e3-8b1cba1b3ac4)
 
 ### 21. Get-ADComputer
 ##### Description: Retrieves information about computer accounts in Active Directory.
